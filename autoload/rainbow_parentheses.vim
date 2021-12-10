@@ -26,6 +26,7 @@ let s:pairs = exists('g:rbpt_colorpairs') ? g:rbpt_colorpairs : s:pairs
 let s:max = exists('g:rbpt_max') ? g:rbpt_max : max([len(s:pairs), 16])
 let s:loadtgl = exists('g:rbpt_loadcmd_toggle') ? g:rbpt_loadcmd_toggle : 0
 let s:types = [['(',')'],['\[','\]'],['{','}'],['<','>']]
+let s:types = exists('g:rbpt_types') ? g:rbpt_types : s:types
 
 func! s:extend()
 	if s:max > len(s:pairs)
